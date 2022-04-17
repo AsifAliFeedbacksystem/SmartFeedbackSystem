@@ -1,0 +1,35 @@
+# register user
+post http://localhost:5555/api/user/
+Content-Type: application/json
+
+{
+    "userName": "saad01",
+    "email": "saad1@gmail.com",
+    "password": "saad01",
+     "phone1": "123456"
+}
+
+###
+
+# get all users
+get http://localhost:5555/api/user/
+
+###
+
+# update authenticated user
+PATCH http://localhost:5555/api/user/
+Content-Type: application/json
+
+{
+    "userName": "saad02",
+    "email": "smsidrees4@gmail.com",
+    "password": "saad02",
+    "contact": {
+        "phone1": "abcdefg",
+        "phone2": "0123456"
+    }
+}
+
+###
+# delete authenticated user
+DELETE http://localhost:5555/api/user/

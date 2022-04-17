@@ -1,0 +1,2 @@
+-goto server folder and run command in terminal "npm install" then run command "npm start"
+-goto client folder and run command in terminal "npm install" then run command "npm start"
